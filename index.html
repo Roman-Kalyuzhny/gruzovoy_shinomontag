@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Грузовой шиномонтаж в Новошахтинске и Красносулинском районе</title>
+    <meta name="description" content="Профессиональный грузовой шиномонтаж, ремонт и балансировка шин, круглосуточное хранение авто, СТО, токарно-фрезерные работы в Новошахтинске и Красносулинском районе Ростовской области.">
+    <meta name="keywords" content="грузовой шиномонтаж, ремонт шин, балансировка колес, хранение авто, шиномонтаж Новошахтинск, шиномонтаж Красносулинский район, СТО, замена масла, токарные работы, фрезерные работы, Ростовская область">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ===== ОБЩИЕ СТИЛИ ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        h2:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background-color: #e74c3c;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 14px 32px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        /* ===== ШАПКА ===== */
+        header {
+            background-color: #2c3e50;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+        
+        .logo img {
+            height: 50px;
+            width: auto;
+            display: block;
+            border-radius: 8px;
+        }
+        
+        .logo-text {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        
+        .logo-text span {
+            color: #e74c3c;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .nav-links a:hover {
+            color: #e74c3c;
+        }
+        
+        .nav-phone {
+            background-color: #27ae60;
+            padding: 8px 16px;
+            border-radius: 25px;
+            color: white !important;
+            font-weight: bold;
+            font-size: 0.95rem;
+            display: inline-block;
+        }
+        
+        .nav-phone:hover {
+            background-color: #1e8449 !important;
+            color: white !important;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        
+        /* ===== ГЛАВНЫЙ БАННЕР ===== */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1593941707882-a5bba5338fe2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 180px 0 100px;
+            margin-top: 80px;
+        }
+        
+        .hero h1 {
+            color: white;
+            margin-bottom: 25px;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 35px;
+        }
+        
+        /* ===== УСЛУГИ (СЕТКА С ЦЕНТРИРОВАНИЕМ) ===== */
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        /* Все карточки имеют одинаковую ширину */
+        .service-card {
+            flex: 0 1 calc(33.333% - 30px);
+            min-width: 250px;
+            max-width: 380px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        /* Контейнер для последней карточки (7-й) — центрируем */
+        .services-bottom-row {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        
+        .services-bottom-row .service-card {
+            flex: 0 1 calc(33.333% - 30px);
+            min-width: 250px;
+            max-width: 380px;
+        }
+        
+        /* Если в последнем ряду одна карточка — делаем её уже */
+        .services-bottom-row .service-card:only-child {
+            flex: 0 1 380px;
+            max-width: 380px;
+        }
+        
+        .service-icon {
+            background-color: #2c3e50;
+            color: white;
+            font-size: 2.5rem;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .service-content p {
+            text-align: center;
+        }
+        
+        /* ===== ПРЕИМУЩЕСТВА ===== */
+        .features {
+            background-color: #f1f1f1;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #e74c3c;
+            margin-bottom: 20px;
+        }
+        
+        /* ===== О НАС ===== */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* ===== КОНТАКТЫ (БЛОКИ В СТОЛБИК) ===== */
+        .contact-section {
+            background-color: #2c3e50;
+            color: white;
+        }
+        
+        .contact-section h2 {
+            color: white;
+        }
+        
+        .contact-section h2:after {
+            background-color: #e74c3c;
+        }
+        
+        .contact-info {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+        
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+            align-items: stretch;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: rgba(255,255,255,0.1);
+            padding: 18px 30px;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+            text-align: left;
+            justify-content: flex-start;
+            width: 100%;
+        }
+        
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            color: #e74c3c;
+        }
+        
+        .contact-icon {
+            font-size: 1.8rem;
+            color: #e74c3c;
+            min-width: 45px;
+            text-align: center;
+        }
+        
+        .contact-item p {
+            margin: 0;
+            font-size: 1rem;
+        }
+        
+        .contact-item strong {
+            display: block;
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+        
+        /* ===== КАРТА ===== */
+        .map-wrapper {
+            margin-top: 40px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.4);
+        }
+        
+        .map-wrapper iframe {
+            display: block;
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+        
+        /* ===== ПОДВАЛ ===== */
+        footer {
+            background-color: #1a252f;
+            color: #bbb;
+            padding: 60px 0 30px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 30px;
+            padding: 0 15px;
+        }
+        
+        .footer-column h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 25px;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column a {
+            color: #bbb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-column a:hover {
+            color: #e74c3c;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        
+        .social-links a {
+            color: white;
+            background-color: #34495e;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: #e74c3c;
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            padding-top: 30px;
+            border-top: 1px solid #34495e;
+            font-size: 0.9rem;
+        }
+        
+        /* ===== АДАПТИВНОСТЬ ===== */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            .about-image {
+                order: -1;
+            }
+        }
+        
+        @media (max-width: 850px) {
+            .service-card,
+            .services-bottom-row .service-card {
+                flex: 0 1 calc(50% - 30px);
+                max-width: 350px;
+            }
+            .services-bottom-row .service-card:only-child {
+                flex: 0 1 350px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            .logo-text {
+                font-size: 1.1rem;
+            }
+            .logo img {
+                height: 35px;
+            }
+            
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #2c3e50;
+                flex-direction: column;
+                padding: 20px 0;
+                text-align: center;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links li {
+                margin: 10px 0;
+            }
+            .nav-links a {
+                font-size: 1rem;
+            }
+            .nav-phone {
+                font-size: 1rem;
+                padding: 10px 25px;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            .map-wrapper iframe {
+                height: 300px;
+            }
+            
+            /* На мобильных все карточки в 1 колонку */
+            .service-card,
+            .services-bottom-row .service-card,
+            .services-bottom-row .service-card:only-child {
+                flex: 0 1 100%;
+                max-width: 400px;
+            }
+            .services-bottom-row {
+                gap: 30px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            section {
+                padding: 60px 0;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+            .map-wrapper iframe {
+                height: 250px;
+            }
+            .logo-text {
+                font-size: 0.95rem;
+            }
+            .logo img {
+                height: 30px;
+            }
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+            .contact-icon {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ===== ШАПКА ===== -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Грузовой шиномонтаж логотип">
+                <div class="logo-text">Грузовой<span>Шиномонтаж</span></div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#features">Преимущества</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="tel:+79044463841" class="nav-phone"><i class="fas fa-phone"></i> Позвонить</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ===== ГЛАВНЫЙ БАННЕР ===== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Профессиональный грузовой шиномонтаж в Новошахтинске и Красносулинском районе</h1>
+            <p>Шиномонтаж, СТО, токарно-фрезерные работы, хранение авто. Выезд по Новошахтинску и району.</p>
+            <a href="#contact" class="btn">Связаться с нами</a>
+        </div>
+    </section>
+
+    <!-- ===== УСЛУГИ ===== -->
+    <section id="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <!-- 1-й ряд: 3 карточки -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-truck"></i></div>
+                    <div class="service-content">
+                        <h3>Шиномонтаж всех видов транспорта</h3>
+                        <p>Легковые и грузовые автомобили, сельскохозяйственная и специальная техника. Выезд на объект в Новошахтинске и районе.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <div class="service-content">
+                        <h3>Ремонт грузовых шин</h3>
+                        <p>Восстановление и ремонт сельскохозяйственных, грузовых и легковых шин любой сложности в Красносулинском районе.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
+                    <div class="service-content">
+                        <h3>Балансировка колес</h3>
+                        <p>Точная балансировка на современном оборудовании для безопасной и комфортной езды по Ростовской области.</p>
+                    </div>
+                </div>
+                
+                <!-- 2-й ряд: 3 карточки -->
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-parking"></i></div>
+                    <div class="service-content">
+                        <h3>Круглосуточное хранение авто</h3>
+                        <p>Охраняемая стоянка для грузового и легкового транспорта в Красносулинском районе. Видеонаблюдение 24/7.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-welding"></i></div>
+                    <div class="service-content">
+                        <h3>Сварочные работы</h3>
+                        <p>Любые виды сварочных работ для спецтехники и автомобилей.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-oil-can"></i></div>
+                    <div class="service-content">
+                        <h3>СТО: замена масла, колодок, стоек</h3>
+                        <p>Замена моторного масла, тормозных колодок, амортизационных стоек. Диагностика ходовой части.</p>
+                    </div>
+                </div>
+                
+                <!-- 3-й ряд: 1 карточка по центру (токарно-фрезерные работы) -->
+                <div class="services-bottom-row">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                        <div class="service-content">
+                            <h3>Токарно-фрезерные работы</h3>
+                            <p>Изготовление и восстановление деталей на токарных и фрезерных станках. Работа с металлом любой сложности.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ПРЕИМУЩЕСТВА ===== -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Почему выбирают нас в Новошахтинске и Красносулинском районе</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                    <h3>Удобное время работы</h3>
+                    <p>Работаем с 08:00 до 19:00 без выходных. Всегда готовы прийти на помощь.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-award"></i></div>
+                    <h3>Опытные мастера</h3>
+                    <p>Наши специалисты имеют более 10 лет опыта работы с грузовым транспортом и спецтехникой.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Гарантия качества</h3>
+                    <p>Даем гарантию на все виды работ. Используем только качественные материалы.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-ruble-sign"></i></div>
+                    <h3>Доступные цены</h3>
+                    <p>Честные и прозрачные цены на шиномонтаж, СТО и другие услуги без скрытых платежей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== О НАС ===== -->
+    <section id="about">
+        <div class="container">
+            <h2>О компании</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Мы специализируемся на услугах грузового шиномонтажа уже более 12 лет. Наша команда профессионалов готова выполнить любые работы по шиномонтажу, СТО, токарно-фрезерной обработке для грузового транспорта, автобусов и спецтехники в Новошахтинске и Красносулинском районе.</p>
+                    <p>Используем современное оборудование, что позволяет нам выполнять работы качественно и быстро даже в сложных условиях.</p>
+                    <p>Мы ценим каждого клиента и гарантируем индивидуальный подход, оперативность и качество выполнения работ.</p>
+                    <p><strong>Также предоставляем услугу круглосуточного хранения автотранспорта на охраняемой территории в Красносулинском районе.</strong></p>
+                    <a href="#contact" class="btn">Связаться с нами</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://avatars.mds.yandex.net/get-altay/14868744/2a000001967daa907a660578928a06aa94ff/XXXL" alt="Мастер по шиномонтажу в Новошахтинске">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== КОНТАКТЫ ===== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>Контакты в Новошахтинске и Красносулинском районе</h2>
+            <div class="contact-info">
+                <h3>Свяжитесь с нами любым удобным способом</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <strong>Адрес мастерской</strong>
+                            <p>Ростовская область, Красносулинский район, Ударниковское сельское поселение (автодорога Новошахтинск - Гуково)</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <strong>Телефон для связи</strong>
+                            <p><a href="tel:+79044463841">+7 (904) 446-38-41</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="mailto:gruzoshina@mail.ru">gruzoshina@mail.ru</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <strong>Режим работы</strong>
+                            <p>08:00 - 19:00, без выходных</p>
+                            <p style="font-size:0.9rem; opacity:0.8;">Хранение авто: круглосуточно</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- КАРТА -->
+                <div class="map-wrapper">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=39.938412%2C47.840336&z=17&pt=39.938412%2C47.840336&l=map&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjQyNzUwNxI60KDQvtGB0YHQuNGPLCDQoNC-0YHRgtC-0LLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0LrRgNCw0LkhCg3Z8B4VHYbGXkI%2C&source=serp" 
+                            width="100%" 
+                            height="400" 
+                            frameborder="0"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ПОДВАЛ ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Грузовой Шиномонтаж</h3>
+                    <p>Шиномонтаж, СТО, токарно-фрезерные работы и хранение авто в Новошахтинске и Красносулинском районе.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="VK"><i class="fab fa-vk"></i></a>
+                        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Быстрые ссылки</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#features">Преимущества</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Наши услуги</h3>
+                    <ul style="list-style: none;">
+                        <li>Выездной шиномонтаж</li>
+                        <li>Ремонт грузовых шин</li>
+                        <li>Балансировка колес</li>
+                        <li>Шиномонтаж спецтехники</li>
+                        <li>СТО (замена масла, колодок, стоек)</li>
+                        <li>Токарно-фрезерные работы</li>
+                        <li>Круглосуточная стоянка авто</li>
+                        <li>Хранение автотранспорта 24/7</li>
+                        <li>Сварочные работы</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Грузовой Шиномонтаж. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== СКРИПТЫ ===== -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if(window.scrollY > 100) {
+                header.style.backgroundColor = 'rgba(44, 62, 80, 0.95)';
+                header.style.padding = '12px 0';
+            } else {
+                header.style.backgroundColor = '#2c3e50';
+                header.style.padding = '20px 0';
+            }
+        });
+    </script>
+</body>
+</html>
